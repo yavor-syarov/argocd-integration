@@ -13,6 +13,12 @@ spec:
   destination: 
     server: https://kubernetes.default.svc
     namespace: myapp
+  
+  plugin:
+      name: argocd-vault-plugin
+      env:
+        - name: AVP_SECRET
+          value: vault-configuration
 
   syncPolicy:
     syncOptions:
