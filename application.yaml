@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/Nirupma-Verma/argocd-integration
+    repoURL: https://github.com/Nirupma-Verma/argocd-integration.git
     targetRevision: HEAD
     path: dev
   destination: 
