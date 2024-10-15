@@ -1,21 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  annotations:
-    avp.kubernetes.io/path: secrets/db
-  name: <password>
+  name: myapp
 spec:
   selector:
     matchLabels:
-      app: <password>
+      app: myapp
   replicas: 3
   template:
     metadata:
       labels:
-        app: <password>
+        app: myapp
     spec:
       containers:
-      - name: <password>
+      - name: myapp
         image: nanajanashia/argocd-app:1.2
         ports:
         - containerPort: 8080
