@@ -1,10 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: myapp-service
+  annotations:
+    avp.kubernetes.io/path: secrets/db
+  name: <password>-service
 spec:
   selector:
-    app: myapp
+    app: <password>
   ports:
   - port: 8080
     protocol: TCP
