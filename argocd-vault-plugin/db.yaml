@@ -3,4 +3,4 @@ kind: Secret
 metadata:
   name: db-secret
 stringData:
-  password: {{ .Values.env.DB_PASSWORD | quote }}
+  password: {{ .Values.env.DB_PASSWORD }}
