@@ -6,12 +6,12 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/Nirupma-Verma/argocd-integration.git
+    repoURL: https://github.com/yavor-syarov/argocd-integration.git
     targetRevision: HEAD
     path: dev
   destination: 
     server: https://kubernetes.default.svc
-    namespace: myapp
+    namespace: apps
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
